@@ -12,3 +12,22 @@ module.exports = {
     title: `Site title`,
   },
 }
+
+
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-theme-garden`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/garden`,
+        rootNote: `/garden/hello`,
+        contentPath: `/content/garden`,
+      },
+    },
+  ],
+    siteMetadata: {
+    title: `Malayalam`,
+  },
+};
